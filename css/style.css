@@ -251,7 +251,10 @@ h3 {
 /* ------------------ main-settings END ----------------------- */
 
 /* -------------------------------- UI -------------------------------------- */
-.main {}
+.main {
+	background-color: var(--grey);
+	padding-top: 2rem;
+}
 
 .invert-color {
 	mix-blend-mode: difference;
@@ -691,5 +694,104 @@ h3 {
 }
 
 /* ----------------------- header END --------------------------------- */
+
+/* ------------------------- our-products --------------------------- */
+
+.our-products {
+	margin-bottom: 2rem;
+}
+
+.our-products__categories {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1rem;
+}
+
+.products-category {
+	border-radius: .5rem;
+	-webkit-border-radius: .5rem;
+	-moz-border-radius: .5rem;
+	-ms-border-radius: .5rem;
+	-o-border-radius: .5rem;
+	overflow: hidden;
+	position: relative;
+	z-index: 5;
+}
+
+.products-category__body {
+	display: block;
+	width: 100%;
+	position: relative;
+	z-index: -5;
+}
+
+.products-category__info {
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.products-category__info.top {
+	top: 0;
+}
+
+.products-category__info.bottom {
+	bottom: 0;
+}
+
+.products-category__info.top .products-category__label {
+	font-family: var(--ff-dinPro500);
+	font-weight: 500;
+	font-size: 1.8rem;
+	line-height: 100%;
+	color: #fff;
+}
+
+.products-category__info.bottom .products-category__label {
+	font-family: var(--ff-dinPro500);
+	font-weight: 500;
+	font-size: 2.4rem;
+	line-height: 100%;
+	color: #FFFFFF;
+}
+
+.products-category__date {
+	background: #EB5757;
+	border-radius: 1rem;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+	height: 1.5rem;
+	width: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.products-category__date span {
+	font-family: var(--ff-dinPro400);
+	font-size: 1.1rem;
+	line-height: 100%;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.products-category__img img {
+	display: block;
+	width: 100%;
+	object-fit: cover;
+}
+
+.products-category__date {}
+
+.bottom {}
+
+/* ------------------------- our-products END --------------------------- */
+
 
 /* ------------------------- MAIN-PAGE END ----------------------- */
