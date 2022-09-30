@@ -99,53 +99,28 @@ $(document).ready(function () {
 		draggable: true,
 		},*/
 	});
-});
 
-const swiper = new Swiper('.swiper', {
-	// Optional parameters
-	/*direction: 'vertical',*/
-	loop: true,
-	slidesPerView: 1, //кол-во слайдов для показа, может быть значение 'auto'
-	spaceBetween: 50, //отступ между слайдами
-	freeMode: false, //слайды будут иметь фиксированные позиции
-	roundLengths: true, //для округлых значений ширины и высоты слайдов для предотвращения размытых текстов
-	setWrapperSize: true, //Включил эту опцию, и плагин установит ширину / высоту на обложке swiper, равную общему размеру всех слайдов.
-	// If we need pagination
-	pagination: { //обычные буллеты
-		el: '.staff-teaching__pagination1',
-		clickable: true,
-		//Динамические буллеты
-		/* dynamicBullets: true */
-
-		//Кастомные буллеты
-		/*renderBullet: function (index, className) {
-		return '<span class="' + className + '">' + (index + 1) + '</span>';
-		}*/
-	},
-	pagination: {
-		type: 'fraction', //нумерация буллеты
-		el: '.swiper-pagination',
-	},
-	// Navigation arrows
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-	// And if we need scrollbar
-	/*scrollbar: {
-	el: '.swiper-scrollbar',
-	draggable: true,
-	},*/
-
-	breakpoints: {
-		320: {
-			slidesPerView: 1,
+	const filterSlider = new Swiper('.filter-products__slider', {
+		// Optional parameters
+		/*direction: 'vertical',*/
+		loop: false,
+		slidesPerView: 3,
+		spaceBetween: 40,
+		navigation: {
+			nextEl: '.filter-products__slider-controls .slider-controls__arrow.right',
+			prevEl: '.filter-products__slider-controls .slider-controls__arrow.left',
 		},
-		480: {
-			slidesPerView: 2,
-		}
-	}
+	});
+
+	$('.filter-product__label__js').on('click', function () {
+		$(this).addClass('_active');
+		$(this).siblings().removeClass('_active');
+		$('.filter-products__slider').removeClass('_active');
+		$('.filter-products__slider').eq($(this).index()).addClass('_active');
+	})
 });
+
+
 /* ------------------------- main-setting END --------------------------- */
 
 
