@@ -3,6 +3,37 @@
 
 $(document).ready(function () {
 	gsap.registerPlugin(ScrollTrigger);
+
+	function maskForPhone() {
+		let maskPhone = document.querySelectorAll('input.maskphone');
+
+		maskPhone.forEach(function (input) {
+			if (input.classList.contains('maskphone')) {
+				//'+7(999) 999 9999'
+				//'+38(999) 999 9999'
+				//'+375(99)999-99-99'
+				// input.classList.add('_mask');
+				input.setAttribute('placeholder', '+375 (___) ___-__-__');
+				Inputmask("+375 (999) 999-99-99", {
+					//"placeholder": '',
+					clearIncomplete: true,
+					clearMaskOnLostFocus: true,
+					onincomplete: function () {
+						input_clear_mask(input, input_g_value);
+					}
+				}).mask(input);
+			}
+		})
+
+		function input_clear_mask(input, input_g_value) {
+			input.inputmask.remove();
+			input.value = input_g_value;
+			input_focus_remove(input);
+		}
+
+	}
+	maskForPhone();
+
 	$('.burger-menu__box').on('click', function () {
 		$(this).parent().toggleClass('_active');
 	})
