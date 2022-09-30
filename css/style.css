@@ -28,6 +28,16 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: "dinProBold";
+	font-display: swap;
+	src: url("../fonts/dinpro_bold.woff2") format("woff2"),
+		url("../fonts/dinpro_bold.woff") format("woff"),
+		url("../fonts/dinpro_bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -63,7 +73,10 @@ img {
 
 p {
 	padding: 0;
-	margin: 0;
+	margin: 0 0 1rem;
+	font-family: var(--ff-dinPro400);
+	font-size: 1.6rem;
+	line-height: 100%;
 }
 
 .default-content p {
@@ -145,8 +158,13 @@ h1 {
 }
 
 h2 {
-	margin: 0;
+	margin: 0 0 1rem;
 	padding: 0;
+	font-family: var(--ff-dinPro700);
+	font-weight: 700;
+	font-size: 2.4rem;
+	line-height: 100%;
+	color: #A4ACAD;
 }
 
 .default-content h2 {
@@ -172,6 +190,7 @@ h3 {
 	--ff-dinPro300: 'dinProLight', sans-serif;
 	--ff-dinPro400: 'dinProRegular', sans-serif;
 	--ff-dinPro500: 'dinProMedium', sans-serif;
+	--ff-dinPro700: 'dinProBold', sans-serif;
 }
 
 @media screen and (min-width: 1024px) {}
@@ -264,7 +283,7 @@ h3 {
 
 /* -------------------------------- UI -------------------------------------- */
 .main {
-	background-color: var(--grey);
+
 	padding-top: 7.7rem;
 }
 
@@ -666,6 +685,7 @@ h3 {
 	.page-body {
 		margin-left: 3rem;
 		margin-right: 4rem;
+		background-color: var(--grey);
 	}
 
 	.main-page {
@@ -1439,8 +1459,7 @@ h3 {
 	}
 
 	.product-card__price {
-		font-family: var(--ff-dinPro500);
-		font-weight: 700;
+		font-family: var(--ff-dinPro700);
 		font-size: 2.4rem;
 		line-height: 100%;
 		color: #000000;
@@ -1497,5 +1516,129 @@ h3 {
 	}
 }
 
+/* ---------------------------- order-product -------------------- */
+.order-product {}
+
+.order-product__container {}
+
+.container {}
+
+.order-product__content {}
+
+.order-product__body {
+	height: 22.8rem;
+	overflow: hidden;
+	position: relative;
+	transition: height 400ms ease-out;
+	-webkit-transition: height 400ms ease-out;
+	-moz-transition: height 400ms ease-out;
+	-ms-transition: height 400ms ease-out;
+	-o-transition: height 400ms ease-out;
+}
+
+.order-product__body._active {
+	margin-bottom: 1rem;
+}
+
+.order-product__body::after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 22.8rem;
+	background: linear-gradient(180deg, rgba(242, 242, 242, 0) 0%, #F2F2F2 100%);
+	transition: all 150ms ease-out 0ms;
+	-webkit-transition: all 150ms ease-out 0ms;
+	-moz-transition: all 150ms ease-out 0ms;
+	-ms-transition: all 150ms ease-out 0ms;
+	-o-transition: all 150ms ease-out 0ms;
+}
+
+.order-product__body._active::after {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.order-product__info p {
+	font-family: var(--ff-dinPro400);
+	font-size: 1.8rem;
+	line-height: 100%;
+	color: #A4ACAD;
+}
+
+.order-product__info ul {
+	list-style: unset;
+	padding-left: 2.4rem;
+}
+
+.order-product__info li {
+	font-family: var(--ff-dinPro400);
+	font-size: 1.8rem;
+	line-height: 100%;
+	color: #A4ACAD;
+	margin-bottom: 1rem;
+}
+
+.order-product__more-info {
+	display: flex;
+	justify-content: center;
+}
+
+.order-product__more-info span {
+	font-family: var(--ff-dinPro400);
+	font-size: 2.4rem;
+	line-height: 100%;
+	color: #F46D40;
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.order-product__more-info span::after {
+	content: "";
+	display: block;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-image: url(../img/icons/arrow_down.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 1.5rem 0.7rem;
+	margin-left: 1rem;
+	transition: transform 150ms ease-out;
+	-webkit-transition: transform 150ms ease-out;
+	-moz-transition: transform 150ms ease-out;
+	-ms-transition: transform 150ms ease-out;
+	-o-transition: transform 150ms ease-out;
+}
+
+.order-product__more-info._active span::after {
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+}
+
+@media screen and (min-width: 1024px) {
+	.order-product__body {
+		margin-bottom: 4.2rem;
+	}
+
+	.order-product__body._active {
+		margin-bottom: 4.2rem;
+	}
+}
+
+/* ---------------------------- order-product END -------------------- */
+
+/* ------------------- footer ---------------------- */
+.footer {
+	margin-top: 2rem;
+}
+
+/* ------------------- footer END ---------------------- */
 
 /* ------------------------- MAIN-PAGE END ----------------------- */

@@ -118,6 +118,16 @@ $(document).ready(function () {
 		$('.filter-products__slider').removeClass('_active');
 		$('.filter-products__slider').eq($(this).index()).addClass('_active');
 	})
+
+	$('.max-height-block__js').on('click', function () {
+		$(this).parent().toggleClass('_active');
+		$('.order-product__body').toggleClass('_active');
+		if ($(this).parent().hasClass('_active')) {
+			$('.order-product__body').css('height', $('.order-product__info').outerHeight() + 'px')
+		} else {
+			$('.order-product__body').css('height', '19.7rem')
+		}
+	})
 });
 
 
