@@ -1,7 +1,9 @@
 <aside class="sidebar main-sidebar">
 	<div class="main-sidebar__container">
 		<div class="main-sidebar__logo">
-			<img src="img/big-logo-min.png" alt="">
+			<a href="http://romsem/">
+				<img src="img/big-logo-min.png" alt="">
+			</a>
 		</div>
 		<div class="main-sidebar__nav">
 			<ul>
@@ -90,7 +92,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#" class="main-sidebar__link">
+					<a href="/sets.php" class="main-sidebar__link">
 						<div class="main-sidebar__link-icon icon-2">
 							<svg width="28" height="29" viewBox="0 0 28 29" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
