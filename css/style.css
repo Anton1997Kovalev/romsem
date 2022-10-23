@@ -806,6 +806,7 @@ h3 {
 		height: 9.5rem;
 		padding-left: 1.8rem;
 		padding-right: 4rem;
+		margin: 0;
 	}
 
 	.header__content {
@@ -1357,6 +1358,10 @@ h3 {
 	display: none;
 }
 
+.product-card {
+	background: #FFFFFF;
+}
+
 @media screen and (min-width: 1024px) {
 	.actual-products {
 		display: block;
@@ -1411,9 +1416,8 @@ h3 {
 		display: block;
 	}
 
-	.actual-products__slide {
+	.product-card {
 		max-width: 28.9rem;
-		background: #FFFFFF;
 		padding: 0.1rem 0 1rem;
 	}
 
@@ -1882,7 +1886,9 @@ h3 {
 /* ------------------------- MAIN-PAGE END ----------------------- */
 
 /* ------------------------- PRODUCTS-PAGE ----------------------- */
-.products-page__row {}
+.products-page__row {
+	margin-bottom: 1.5rem;
+}
 
 /* ------------------------- breadcrumbs-and-filters --------------------*/
 .breadcrumbs-block {
@@ -1939,9 +1945,10 @@ h3 {
 	-ms-border-radius: 1rem;
 	-o-border-radius: 1rem;
 	display: flex;
-	align-items: center;
+	align-items: end;
 	padding: 1rem;
 	position: relative;
+	cursor: pointer;
 }
 
 .filter-products__head::after {
@@ -1960,7 +1967,7 @@ h3 {
 	background-image: url(../img/icons/filter-arrow.svg);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 2rem 1rem;
+	background-size: 100%;
 	pointer-events: none;
 	transition: transform 150ms ease-out;
 	-webkit-transition: transform 150ms ease-out;
@@ -1980,7 +1987,7 @@ h3 {
 .filter-products__head-lines {
 	width: 2.4rem;
 	position: relative;
-	height: 3rem;
+	height: 3.3rem;
 	margin-right: 1.5rem;
 }
 
@@ -2038,11 +2045,45 @@ h3 {
 	font-size: 2.4rem;
 	line-height: 100%;
 	color: var(--black);
+	transition: all 150ms ease-out;
+	-webkit-transition: all 150ms ease-out;
+	-moz-transition: all 150ms ease-out;
+	-ms-transition: all 150ms ease-out;
+	-o-transition: all 150ms ease-out;
+}
+
+.filter-products__head._active .filter-products__placeholder {
+	top: .4rem;
+	transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	font-family: var(--ff-dinPro300);
+	font-weight: 300;
+	font-size: 1.4rem;
+	line-height: 100%;
+	color: var(--grey2);
 }
 
 .filter-products__label {
 	pointer-events: none;
 	opacity: 0;
+	transition: all 150ms ease-out;
+	-webkit-transition: all 150ms ease-out;
+	-moz-transition: all 150ms ease-out;
+	-ms-transition: all 150ms ease-out;
+	-o-transition: all 150ms ease-out;
+	transform: translateY(-0.5rem);
+	-webkit-transform: translateY(-0.5rem);
+	-moz-transform: translateY(-0.5rem);
+	-ms-transform: translateY(-0.5rem);
+	-o-transform: translateY(-0.5rem);
+	white-space: nowrap;
+}
+
+.filter-products__head._active .filter-products__label {
+	opacity: 1;
 }
 
 .filter-products__body {
@@ -2085,8 +2126,109 @@ h3 {
 	font-size: 1.8rem;
 	line-height: 100%;
 	color: var(--black);
+	cursor: pointer;
+	transition: color 150ms ease-out;
+	-webkit-transition: color 150ms ease-out;
+	-moz-transition: color 150ms ease-out;
+	-ms-transition: color 150ms ease-out;
+	-o-transition: color 150ms ease-out;
+}
+
+.filter-products__item:hover {
+	color: var(--red);
+}
+
+@media screen and (min-width: 1024px) {
+	.products-page__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 3rem;
+	}
+
+	.breadcrumbs-block {
+		margin-bottom: 0;
+	}
+
+	.breadcrumbs-block__item-icon svg {
+		width: 4rem;
+		height: 4.3rem;
+	}
+
+	.filter-products {
+		width: 19.8rem;
+	}
+
+	.filter-products__placeholder {
+		font-size: 1.8rem;
+		line-height: 100%;
+		left: 1.4rem;
+	}
+
+	.filter-products__head {
+		padding: 2rem 3.1rem 1rem 1.4rem;
+	}
+
+	.filter-products__head-lines {
+		display: none;
+	}
+
+	.filter-products__label {
+		transform: translateY(0);
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+	}
 }
 
 /* ------------------------- breadcrumbs-and-filters END --------------------*/
+
+/* ------------------------- box-products -------------------------- */
+
+.box-products {}
+
+.box-products__container {}
+
+.box-products__content {}
+
+.box-products__list {}
+
+.box-product__card {}
+
+.product-card {}
+
+.box-product__img {}
+
+.product-card__img {}
+
+.box-product__info {}
+
+.product-card__info {}
+
+.box-product__label {}
+
+.product-card__label {}
+
+.box-product__ingredients {}
+
+.product-card__ingredients {}
+
+.box-product__row {}
+
+.product-card__row {}
+
+.box-product__price {}
+
+.product-card__price {}
+
+.box-product__btn {}
+
+.product-card__btn {}
+
+.btn {}
+
+/* ------------------------- box-products END -------------------------- */
+
 
 /* ------------------------- PRODUCTS-PAGE END ----------------------- */

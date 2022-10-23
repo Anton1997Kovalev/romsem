@@ -153,6 +153,16 @@ $(document).ready(function () {
 			$(this).siblings('.filter-products__body').css('height', 0);
 		}
 	})
+
+	$('.select-filter-item__js').on('click', function () {
+		$(this).addClass('_hide');
+		$(this).siblings().removeClass('_hide');
+		$(this).closest('.filter-products').removeClass('_active');
+		$(this).closest('.filter-products').find('.filter-products__head').addClass('_active');
+
+		$(this).closest('.filter-products').find('.filter-products__label').text($(this).text());
+		$(this).closest('.filter-products').find('.filter-products__body').css('height', 0);
+	})
 });
 
 

@@ -66,10 +66,60 @@
 										</ul>
 									</div>
 								</div>
-
 							</div>
 						</div>
-
+						<section class="box-products">
+							<div class="box-products__container container">
+								<div class="box-products__content">
+									<div class="box-products__list">
+										<div class="box-product__card product-card">
+											<div class="box-product__img product-card__img">
+												<picture>
+													<source srcset="img/filter-product/set-min.webp" type="image/webp">
+													<img src="img/filter-product/set-min.jpg" alt="">
+												</picture>
+											</div>
+											<div class="box-product__info product-card__info">
+												<div class="box-product__label product-card__label">
+													Саломон сет
+												</div>
+												<div class="box-product__ingredients product-card__ingredients">
+													1050 грамм, 30 кусочков
+												</div>
+											</div>
+											<div class="box-product__row product-card__row">
+												<div class="box-product__price product-card__price">1500 СОМ</div>
+												<div class="box-product__btn product-card__btn btn">
+													<a href="#">Хочу!</a>
+												</div>
+											</div>
+										</div>
+										<div class="box-product__card product-card">
+											<div class="box-product__img product-card__img">
+												<picture>
+													<source srcset="img/filter-product/set-min.webp" type="image/webp">
+													<img src="img/filter-product/set-min.jpg" alt="">
+												</picture>
+											</div>
+											<div class="box-product__info product-card__info">
+												<div class="box-product__label product-card__label">
+													Саломон сет
+												</div>
+												<div class="box-product__ingredients product-card__ingredients">
+													1050 грамм, 30 кусочков
+												</div>
+											</div>
+											<div class="box-product__row product-card__row">
+												<div class="box-product__price product-card__price">1500 СОМ</div>
+												<div class="box-product__btn product-card__btn btn">
+													<a href="#">Хочу!</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
 						<?php include_once 'inc/order-product-info.php'; ?>
 					</main>
 					<?php include_once 'inc/footer.php'; ?>
