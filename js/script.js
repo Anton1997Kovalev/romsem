@@ -111,17 +111,21 @@ $(document).ready(function () {
 		},*/
 	});
 
-	const filterSlider = new Swiper('.actual-products__slider', {
-		// Optional parameters
-		/*direction: 'vertical',*/
-		loop: false,
-		slidesPerView: 3,
-		spaceBetween: 40,
-		navigation: {
-			nextEl: '.actual-products__slider-controls .slider-controls__arrow.right',
-			prevEl: '.actual-products__slider-controls .slider-controls__arrow.left',
-		},
-	});
+	if ($(window).width() > 1024) {
+		const filterSlider = new Swiper('.actual-products__slider', {
+			// Optional parameters
+			/*direction: 'vertical',*/
+			loop: false,
+			slidesPerView: 'auto',
+			spaceBetween: 0,
+			navigation: {
+				nextEl: '.actual-products__slider-controls .slider-controls__arrow.right',
+				prevEl: '.actual-products__slider-controls .slider-controls__arrow.left',
+			},
+		});
+	}
+
+
 
 	$('.actual-product__label__js').on('click', function () {
 		$(this).addClass('_active');

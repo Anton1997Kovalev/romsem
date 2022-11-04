@@ -72,47 +72,103 @@
 							<div class="box-products__container container">
 								<div class="box-products__content">
 									<div class="box-products__list">
-										<div class="box-product__card product-card">
-											<div class="box-product__img product-card__img">
+										<div class="product-card box-product">
+											<div class="product-card__img box-product__img">
 												<picture>
 													<source srcset="img/filter-product/set-min.webp" type="image/webp">
 													<img src="img/filter-product/set-min.jpg" alt="">
 												</picture>
 											</div>
-											<div class="box-product__info product-card__info">
-												<div class="box-product__label product-card__label">
-													Саломон сет
+											<div class="product-card__block box-product__block">
+												<div class="product-card__info box-product__info">
+													<div class="product-card__label box-product__label">
+														Саломон сет
+													</div>
+													<div class="product-card__ingredients box-product__ingredients">
+														1050 грамм, 30 кусочков
+													</div>
 												</div>
-												<div class="box-product__ingredients product-card__ingredients">
-													1050 грамм, 30 кусочков
-												</div>
-											</div>
-											<div class="box-product__row product-card__row">
-												<div class="box-product__price product-card__price">1500 СОМ</div>
-												<div class="box-product__btn product-card__btn btn">
-													<a href="#">Хочу!</a>
+												<div class="product-card__row box-product__row">
+													<div class="product-card__price box-product__price">1500 СОМ
+													</div>
+													<div class="product-card__btn box-product__btn btn">
+														<a href="#">Хочу!</a>
+													</div>
 												</div>
 											</div>
 										</div>
-										<div class="box-product__card product-card">
-											<div class="box-product__img product-card__img">
+										<div class="product-card box-product">
+											<div class="product-card__img box-product__img">
 												<picture>
 													<source srcset="img/filter-product/set-min.webp" type="image/webp">
 													<img src="img/filter-product/set-min.jpg" alt="">
 												</picture>
 											</div>
-											<div class="box-product__info product-card__info">
-												<div class="box-product__label product-card__label">
-													Саломон сет
+											<div class="product-card__block box-product__block">
+												<div class="product-card__info box-product__info">
+													<div class="product-card__label box-product__label">
+														Саломон сет
+													</div>
+													<div class="product-card__ingredients box-product__ingredients">
+														1050 грамм, 30 кусочков
+													</div>
 												</div>
-												<div class="box-product__ingredients product-card__ingredients">
-													1050 грамм, 30 кусочков
+												<div class="product-card__row box-product__row">
+													<div class="product-card__price box-product__price">1500 СОМ
+													</div>
+													<div class="product-card__btn box-product__btn btn">
+														<a href="#">Хочу!</a>
+													</div>
 												</div>
 											</div>
-											<div class="box-product__row product-card__row">
-												<div class="box-product__price product-card__price">1500 СОМ</div>
-												<div class="box-product__btn product-card__btn btn">
-													<a href="#">Хочу!</a>
+										</div>
+										<div class="product-card box-product">
+											<div class="product-card__img box-product__img">
+												<picture>
+													<source srcset="img/filter-product/set2-min.webp" type="image/webp">
+													<img src="img/filter-product/set2-min.jpg" alt="">
+												</picture>
+											</div>
+											<div class="product-card__block box-product__block">
+												<div class="product-card__info box-product__info">
+													<div class="product-card__label box-product__label">
+														Саломон сет
+													</div>
+													<div class="product-card__ingredients box-product__ingredients">
+														1050 грамм, 30 кусочков
+													</div>
+												</div>
+												<div class="product-card__row box-product__row">
+													<div class="product-card__price box-product__price">1500 СОМ
+													</div>
+													<div class="product-card__btn box-product__btn btn">
+														<a href="#">Хочу!</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card box-product">
+											<div class="product-card__img box-product__img">
+												<picture>
+													<source srcset="img/filter-product/set3-min.webp" type="image/webp">
+													<img src="img/filter-product/set3-min.jpg" alt="">
+												</picture>
+											</div>
+											<div class="product-card__block box-product__block">
+												<div class="product-card__info box-product__info">
+													<div class="product-card__label box-product__label">
+														Саломон сет
+													</div>
+													<div class="product-card__ingredients box-product__ingredients">
+														1050 грамм, 30 кусочков
+													</div>
+												</div>
+												<div class="product-card__row box-product__row">
+													<div class="product-card__price box-product__price">1500 СОМ
+													</div>
+													<div class="product-card__btn box-product__btn btn">
+														<a href="#">Хочу!</a>
+													</div>
 												</div>
 											</div>
 										</div>
