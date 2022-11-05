@@ -73,101 +73,363 @@
 								<div class="box-products__content">
 									<div class="box-products__list">
 										<div class="product-card box-product">
-											<div class="product-card__img box-product__img">
+											<a href="" class="product-card__img box-product__img">
 												<picture>
 													<source srcset="img/filter-product/set-min.webp" type="image/webp">
 													<img src="img/filter-product/set-min.jpg" alt="">
 												</picture>
-											</div>
+											</a>
 											<div class="product-card__block box-product__block">
-												<div class="product-card__info box-product__info">
+												<a href="" class="product-card__info box-product__info">
 													<div class="product-card__label box-product__label">
 														Саломон сет
 													</div>
 													<div class="product-card__ingredients box-product__ingredients">
 														1050 грамм, 30 кусочков
 													</div>
-												</div>
+												</a>
 												<div class="product-card__row box-product__row">
 													<div class="product-card__price box-product__price">1500 СОМ
 													</div>
-													<div class="product-card__btn box-product__btn btn">
-														<a href="#">Хочу!</a>
+													<div class="product-card__btns box-product__btns">
+														<div
+															class="product-card__btn box-product__btn btn add-product-card__js">
+															<span>Хочу!</span>
+														</div>
+														<div class="quantity-number product-card__quantity">
+															<div
+																class="quantity-number__icon product-card__quantity-icon minus quantity-product-add-card__js">
+																<?php include 'img/icons/minus.svg'; ?>
+															</div>
+															<div
+																class="quantity-number__label product-card__quantity-label">
+																1
+															</div>
+															<div
+																class="quantity-number__icon product-card__quantity-icon plus quantity-product-add-card__js">
+																<?php include 'img/icons/plus.svg'; ?>
+															</div>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
 										<div class="product-card box-product">
-											<div class="product-card__img box-product__img">
+											<a href="" class="product-card__img box-product__img">
 												<picture>
 													<source srcset="img/filter-product/set-min.webp" type="image/webp">
 													<img src="img/filter-product/set-min.jpg" alt="">
 												</picture>
-											</div>
+											</a>
 											<div class="product-card__block box-product__block">
-												<div class="product-card__info box-product__info">
+												<a href="" class="product-card__info box-product__info">
 													<div class="product-card__label box-product__label">
 														Саломон сет
 													</div>
 													<div class="product-card__ingredients box-product__ingredients">
 														1050 грамм, 30 кусочков
 													</div>
-												</div>
+												</a>
 												<div class="product-card__row box-product__row">
 													<div class="product-card__price box-product__price">1500 СОМ
 													</div>
-													<div class="product-card__btn box-product__btn btn">
-														<a href="#">Хочу!</a>
+													<div class="product-card__btns box-product__btns">
+														<div
+															class="product-card__btn box-product__btn btn add-product-card__js">
+															<span>Хочу!</span>
+														</div>
+														<div class="quantity-number product-card__quantity">
+															<div
+																class="quantity-number__icon product-card__quantity-icon minus quantity-product-add-card__js">
+																<?php include 'img/icons/minus.svg'; ?>
+															</div>
+															<div
+																class="quantity-number__label product-card__quantity-label">
+																1
+															</div>
+															<div
+																class="quantity-number__icon product-card__quantity-icon plus quantity-product-add-card__js">
+																<?php include 'img/icons/plus.svg'; ?>
+															</div>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
 										<div class="product-card box-product">
-											<div class="product-card__img box-product__img">
+											<a href="" class="product-card__img box-product__img">
 												<picture>
 													<source srcset="img/filter-product/set2-min.webp" type="image/webp">
 													<img src="img/filter-product/set2-min.jpg" alt="">
 												</picture>
-											</div>
+											</a>
 											<div class="product-card__block box-product__block">
-												<div class="product-card__info box-product__info">
+												<a href="" class="product-card__info box-product__info">
 													<div class="product-card__label box-product__label">
 														Саломон сет
 													</div>
 													<div class="product-card__ingredients box-product__ingredients">
 														1050 грамм, 30 кусочков
 													</div>
-												</div>
+												</a>
 												<div class="product-card__row box-product__row">
 													<div class="product-card__price box-product__price">1500 СОМ
 													</div>
-													<div class="product-card__btn box-product__btn btn">
-														<a href="#">Хочу!</a>
+													<div class="product-card__btns box-product__btns">
+														<div
+															class="product-card__btn box-product__btn btn add-product-card__js">
+															<span>Хочу!</span>
+														</div>
+														<div class="quantity-number product-card__quantity">
+															<div
+																class="quantity-number__icon product-card__quantity-icon minus quantity-product-add-card__js">
+																<?php include 'img/icons/minus.svg'; ?>
+															</div>
+															<div
+																class="quantity-number__label product-card__quantity-label">
+																1
+															</div>
+															<div
+																class="quantity-number__icon product-card__quantity-icon plus quantity-product-add-card__js">
+																<?php include 'img/icons/plus.svg'; ?>
+															</div>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
 										<div class="product-card box-product">
-											<div class="product-card__img box-product__img">
+											<a href="" class="product-card__img box-product__img">
 												<picture>
 													<source srcset="img/filter-product/set3-min.webp" type="image/webp">
 													<img src="img/filter-product/set3-min.jpg" alt="">
 												</picture>
-											</div>
+											</a>
 											<div class="product-card__block box-product__block">
-												<div class="product-card__info box-product__info">
+												<a href="" class="product-card__info box-product__info">
 													<div class="product-card__label box-product__label">
 														Саломон сет
 													</div>
 													<div class="product-card__ingredients box-product__ingredients">
 														1050 грамм, 30 кусочков
 													</div>
-												</div>
+												</a>
 												<div class="product-card__row box-product__row">
 													<div class="product-card__price box-product__price">1500 СОМ
 													</div>
-													<div class="product-card__btn box-product__btn btn">
-														<a href="#">Хочу!</a>
+													<div class="product-card__btns box-product__btns">
+														<div
+															class="product-card__btn box-product__btn btn add-product-card__js">
+															<span>Хочу!</span>
+														</div>
+														<div class="quantity-number product-card__quantity">
+															<div
+																class="quantity-number__icon product-card__quantity-icon minus quantity-product-add-card__js">
+																<?php include 'img/icons/minus.svg'; ?>
+															</div>
+															<div
+																class="quantity-number__label product-card__quantity-label">
+																1
+															</div>
+															<div
+																class="quantity-number__icon product-card__quantity-icon plus quantity-product-add-card__js">
+																<?php include 'img/icons/plus.svg'; ?>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card box-product">
+											<a href="" class="product-card__img box-product__img">
+												<picture>
+													<source srcset="img/filter-product/set-min.webp" type="image/webp">
+													<img src="img/filter-product/set-min.jpg" alt="">
+												</picture>
+											</a>
+											<div class="product-card__block box-product__block">
+												<a href="" class="product-card__info box-product__info">
+													<div class="product-card__label box-product__label">
+														Саломон сет
+													</div>
+													<div class="product-card__ingredients box-product__ingredients">
+														1050 грамм, 30 кусочков
+													</div>
+												</a>
+												<div class="product-card__row box-product__row">
+													<div class="product-card__price box-product__price">1500 СОМ
+													</div>
+													<div class="product-card__btns box-product__btns">
+														<div
+															class="product-card__btn box-product__btn btn add-product-card__js">
+															<span>Хочу!</span>
+														</div>
+														<div class="quantity-number product-card__quantity">
+															<div
+																class="quantity-number__icon product-card__quantity-icon minus quantity-product-add-card__js">
+																<?php include 'img/icons/minus.svg'; ?>
+															</div>
+															<div
+																class="quantity-number__label product-card__quantity-label">
+																1
+															</div>
+															<div
+																class="quantity-number__icon product-card__quantity-icon plus quantity-product-add-card__js">
+																<?php include 'img/icons/plus.svg'; ?>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card box-product">
+											<a href="" class="product-card__img box-product__img">
+												<picture>
+													<source srcset="img/filter-product/set-min.webp" type="image/webp">
+													<img src="img/filter-product/set-min.jpg" alt="">
+												</picture>
+											</a>
+											<div class="product-card__block box-product__block">
+												<a href="" class="product-card__info box-product__info">
+													<div class="product-card__label box-product__label">
+														Саломон сет
+													</div>
+													<div class="product-card__ingredients box-product__ingredients">
+														1050 грамм, 30 кусочков
+													</div>
+												</a>
+												<div class="product-card__row box-product__row">
+													<div class="product-card__price box-product__price">1500 СОМ
+													</div>
+													<div class="product-card__btns box-product__btns">
+														<div
+															class="product-card__btn box-product__btn btn add-product-card__js">
+															<span>Хочу!</span>
+														</div>
+														<div class="quantity-number product-card__quantity">
+															<div
+																class="quantity-number__icon product-card__quantity-icon minus quantity-product-add-card__js">
+																<?php include 'img/icons/minus.svg'; ?>
+															</div>
+															<div
+																class="quantity-number__label product-card__quantity-label">
+																1
+															</div>
+															<div
+																class="quantity-number__icon product-card__quantity-icon plus quantity-product-add-card__js">
+																<?php include 'img/icons/plus.svg'; ?>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card box-product">
+											<a href="" class="product-card__img box-product__img">
+												<picture>
+													<source srcset="img/filter-product/set2-min.webp" type="image/webp">
+													<img src="img/filter-product/set2-min.jpg" alt="">
+												</picture>
+											</a>
+											<div class="product-card__block box-product__block">
+												<a href="" class="product-card__info box-product__info">
+													<div class="product-card__label box-product__label">
+														Саломон сет
+													</div>
+													<div class="product-card__ingredients box-product__ingredients">
+														1050 грамм, 30 кусочков
+													</div>
+												</a>
+												<div class="product-card__row box-product__row">
+													<div class="product-card__price box-product__price">1500 СОМ
+													</div>
+													<div class="product-card__btns box-product__btns">
+														<div
+															class="product-card__btn box-product__btn btn add-product-card__js">
+															<span>Хочу!</span>
+														</div>
+														<div class="quantity-number product-card__quantity">
+															<div
+																class="quantity-number__icon product-card__quantity-icon minus quantity-product-add-card__js">
+																<?php include 'img/icons/minus.svg'; ?>
+															</div>
+															<div
+																class="quantity-number__label product-card__quantity-label">
+																1
+															</div>
+															<div
+																class="quantity-number__icon product-card__quantity-icon plus quantity-product-add-card__js">
+																<?php include 'img/icons/plus.svg'; ?>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card box-product">
+											<a href="" class="product-card__img box-product__img">
+												<picture>
+													<source srcset="img/filter-product/set3-min.webp" type="image/webp">
+													<img src="img/filter-product/set3-min.jpg" alt="">
+												</picture>
+											</a>
+											<div class="product-card__block box-product__block">
+												<a href="" class="product-card__info box-product__info">
+													<div class="product-card__label box-product__label">
+														Саломон сет
+													</div>
+													<div class="product-card__ingredients box-product__ingredients">
+														1050 грамм, 30 кусочков
+													</div>
+												</a>
+												<div class="product-card__row box-product__row">
+													<div class="product-card__price box-product__price">1500 СОМ
+													</div>
+													<div
+														class="product-card__btn box-product__btn btn add-product-card__js">
+														<span>Хочу!</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-card box-product">
+											<a href="" class="product-card__img box-product__img">
+												<picture>
+													<source srcset="img/filter-product/set3-min.webp" type="image/webp">
+													<img src="img/filter-product/set3-min.jpg" alt="">
+												</picture>
+											</a>
+											<div class="product-card__block box-product__block">
+												<a href="" class="product-card__info box-product__info">
+													<div class="product-card__label box-product__label">
+														Саломон сет
+													</div>
+													<div class="product-card__ingredients box-product__ingredients">
+														1050 грамм, 30 кусочков
+													</div>
+												</a>
+												<div class="product-card__row box-product__row">
+													<div class="product-card__price box-product__price">1500 СОМ
+													</div>
+													<div class="product-card__btns box-product__btns">
+														<div
+															class="product-card__btn box-product__btn btn add-product-card__js">
+															<span>Хочу!</span>
+														</div>
+														<div class="quantity-number product-card__quantity">
+															<div
+																class="quantity-number__icon product-card__quantity-icon minus quantity-product-add-card__js">
+																<?php include 'img/icons/minus.svg'; ?>
+															</div>
+															<div
+																class="quantity-number__label product-card__quantity-label">
+																1
+															</div>
+															<div
+																class="quantity-number__icon product-card__quantity-icon plus quantity-product-add-card__js">
+																<?php include 'img/icons/plus.svg'; ?>
+															</div>
+														</div>
 													</div>
 												</div>
 											</div>

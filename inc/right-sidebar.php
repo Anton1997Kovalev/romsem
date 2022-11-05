@@ -2,17 +2,7 @@
 	<div class="right-sidebar__container">
 		<div class="basket-block">
 			<div class="basket-block__container">
-				<div class="basket-block__empty">
-					<div class="basket-block__empty-label">
-						Ваша корзина пуста.
-					</div>
-					<div class="basket-block__empty-add">
-						Добавьте же скорее что-нибудь!
-					</div>
-					<div class="basket-block__empty-free">
-						Бесплатная доставка от 800 СОМ
-					</div>
-				</div>
+				<div class="basket-block__label">Ваша корзина пуста.</div>
 
 			</div>
 		</div>

@@ -126,7 +126,6 @@ $(document).ready(function () {
 	}
 
 
-
 	$('.actual-product__label__js').on('click', function () {
 		$(this).addClass('_active');
 		$(this).siblings().removeClass('_active');
@@ -167,6 +166,34 @@ $(document).ready(function () {
 		$(this).closest('.filter-products').find('.filter-products__label').text($(this).text());
 		$(this).closest('.filter-products').find('.filter-products__body').css('height', 0);
 	})
+
+	function quantityNumberCard() {
+		$('.quantity-product-add-card__js').on('click', function () {
+			let num = Number($(this).siblings('.quantity-number__label').text());
+			let res = 1;
+
+			if ($(this).hasClass('plus')) {
+				res = num + 1;
+			}
+			if ($(this).hasClass('minus')) {
+				if (num > 1) {
+					res = num - 1;
+				}
+
+				if (num === 1) {
+					$(this).closest('.product-card__btns').removeClass('_active');
+				}
+			}
+			$(this).siblings('.quantity-number__label').text(res);
+
+		})
+
+		$('.add-product-card__js').on('click', function () {
+			$(this).parent().addClass('_active')
+		})
+	}
+
+	quantityNumberCard()
 });
 
 
