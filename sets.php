@@ -72,7 +72,7 @@
 							<div class="box-products__container container">
 								<div class="box-products__content">
 									<div class="box-products__list">
-										<div class="product-card box-product">
+										<div class="product-card box-product" data-index data-count-product="1">
 											<a href="" class="product-card__img box-product__img">
 												<picture>
 													<source srcset="img/filter-product/set-min.webp" type="image/webp">
@@ -114,7 +114,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="product-card box-product">
+										<div class="product-card box-product" data-index data-count-product="1">
 											<a href="" class="product-card__img box-product__img">
 												<picture>
 													<source srcset="img/filter-product/set-min.webp" type="image/webp">
@@ -156,7 +156,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="product-card box-product">
+										<div class="product-card box-product" data-index data-count-product="1">
 											<a href="" class="product-card__img box-product__img">
 												<picture>
 													<source srcset="img/filter-product/set2-min.webp" type="image/webp">
@@ -198,7 +198,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="product-card box-product">
+										<div class="product-card box-product" data-index data-count-product="1">
 											<a href="" class="product-card__img box-product__img">
 												<picture>
 													<source srcset="img/filter-product/set3-min.webp" type="image/webp">
@@ -240,7 +240,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="product-card box-product">
+										<div class="product-card box-product" data-index data-count-product="1">
 											<a href="" class="product-card__img box-product__img">
 												<picture>
 													<source srcset="img/filter-product/set-min.webp" type="image/webp">
@@ -282,7 +282,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="product-card box-product">
+										<div class="product-card box-product" data-index data-count-product="1">
 											<a href="" class="product-card__img box-product__img">
 												<picture>
 													<source srcset="img/filter-product/set-min.webp" type="image/webp">
@@ -324,7 +324,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="product-card box-product">
+										<div class="product-card box-product" data-index data-count-product="1">
 											<a href="" class="product-card__img box-product__img">
 												<picture>
 													<source srcset="img/filter-product/set2-min.webp" type="image/webp">
@@ -366,7 +366,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="product-card box-product">
+										<div class="product-card box-product" data-index data-count-product="1">
 											<a href="" class="product-card__img box-product__img">
 												<picture>
 													<source srcset="img/filter-product/set3-min.webp" type="image/webp">
@@ -392,7 +392,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="product-card box-product">
+										<div class="product-card box-product" data-index data-count-product="1">
 											<a href="" class="product-card__img box-product__img">
 												<picture>
 													<source srcset="img/filter-product/set3-min.webp" type="image/webp">

@@ -168,28 +168,84 @@ $(document).ready(function () {
 	})
 
 	function quantityNumberCard() {
-		$('.quantity-product-add-card__js').on('click', function () {
-			let num = Number($(this).siblings('.quantity-number__label').text());
-			let res = 1;
 
-			if ($(this).hasClass('plus')) {
-				res = num + 1;
-			}
-			if ($(this).hasClass('minus')) {
-				if (num > 1) {
-					res = num - 1;
-				}
-
-				if (num === 1) {
-					$(this).closest('.product-card__btns').removeClass('_active');
-				}
-			}
-			$(this).siblings('.quantity-number__label').text(res);
-
+		$('.product-card').each(function (index, item) {
+			$(item).attr('data-index', index);
 		})
+
+		function quantityFunc() {
+			$('.quantity-product-add-card__js').on('click', function () {
+				let num = Number($(this).closest('.product-card').attr('data-count-product'));
+				let res = 0;
+
+				if ($(this).hasClass('plus')) {
+					res = num + 1;
+				}
+				if ($(this).hasClass('minus')) {
+					if (num > 1) {
+						res = num - 1;
+					}
+
+					if (num === 1) {
+						$(this).closest('.product-card__btns').removeClass('_active');
+						// $('.basket-block__item').eq($(this).closest('.product-card').data('index')).remove();
+					}
+				}
+				$(this).closest('.product-card').attr('data-count-product', res)
+				$(this).siblings('.quantity-number__label').text(res);
+
+				console.log(num)
+
+				$('.basket-block__list').find('[data-index="' + Number($(this).closest('.product-card').data('index')) + '"]').find('.basket-block__quantity-label').text(res)
+			})
+		}
+		quantityFunc()
+
 
 		$('.add-product-card__js').on('click', function () {
 			$(this).parent().addClass('_active')
+
+			if ($(this).closest('.product-card')) {
+				$('.basket-block').addClass('_active');
+				$('.basket-block__label').text('Корзина');
+
+				let product = '<div class="basket-block__item" data-index="' + $(this).closest('.product-card').data('index') + '">' +
+					'<div class="basket-block__item-img">' +
+					'<picture>' +
+					'<source srcset="' + $(this).closest('.product-card').find('.product-card__img').find('source').attr('srcset') + '" type="' + $(this).closest('.product-card').find('.product-card__img').find('source').attr('type') + '">' +
+					'<img src="' + $(this).closest('.product-card').find('.product-card__img').find('img').attr('src') + '" alt="">' +
+					'</picture>' +
+					'</div>' +
+					'<div class="basket-block__item-column">' +
+					'<div class="basket-block__item-label">' + $(this).closest('.product-card').find('.product-card__label').text() + '</div>' +
+					'<div class="basket-block__item-row">' +
+					'<div class="basket-block__quantity quantity-number">' +
+					'<div class="basket-block__quantity-icon quantity-number__icon minus quantity-product-add-card__js">' +
+					'<svg width="23" height="2" viewBox="0 0 23 2" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+					'<path d="M1 1L22 0.999999" stroke="#111111" stroke-width="2" stroke-linecap="round"/>' +
+					'</svg>' +
+					'</div>' +
+					'<div class="basket-block__quantity-label quantity-number__label">' +
+					$(this).siblings('.quantity-number').find('.quantity-number__label').text() +
+					'</div>' +
+					'<div class="basket-block__quantity-icon quantity-number__icon plus quantity-product-add-card__js">' +
+					'<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+					'<path d="M11 1V22" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round"/>' +
+					'<path d="M1 11L22 11" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round"/>' +
+					'</svg>' +
+					'</div>' +
+					'</div>' +
+					'<div class="basket-block__item-price">' + $(this).closest('.product-card').find('.product-card__price').text() + '</div>' +
+					'</div>' +
+					'</div>' +
+					'</div>';
+
+				$('.basket-block__list').append(product);
+
+
+			}
+
+
 		})
 	}
 

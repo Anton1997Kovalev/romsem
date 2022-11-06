@@ -3,7 +3,41 @@
 		<div class="basket-block">
 			<div class="basket-block__container">
 				<div class="basket-block__label">Ваша корзина пуста.</div>
+				<div class="basket-block__emtpy">Добавьте же скорее что-нибудь!</div>
+				<div class="basket-block__list">
+					<!-- <div class="basket-block__item">
+						<div class="basket-block__item-img">
+							<picture>
+								<source srcset="/img/filter-product/set-min.webp" type="image/webp">
+								<img src="/img/filter-product/set-min.jpg" alt="">
+							</picture>
+						</div>
+						<div class="basket-block__item-column">
+							<div class="basket-block__item-label">Самая большая Филадельфия</div>
+							<div class="basket-block__item-row">
+								<div class="basket-block__quantity quantity-number">
+									<div
+										class="basket-block__quantity-icon quantity-number__icon minus quantity-product-add-card__js">
+										<?php include 'img/icons/minus.svg'; ?>
+									</div>
+									<div class="basket-block__quantity-label quantity-number__label">
+										1
+									</div>
+									<div
+										class="basket-block__quantity-icon quantity-number__icon plus quantity-product-add-card__js">
+										<?php include 'img/icons/plus.svg'; ?>
+									</div>
+								</div>
+								<div class="basket-block__item-price">170 СОМ</div>
+							</div>
 
+						</div>
+
+					</div> -->
+				</div>
+				<div class="basket-block__delivery">
+					Бесплатная доставка от 800 СОМ
+				</div>
 			</div>
 		</div>
 		<div class="location-block">
